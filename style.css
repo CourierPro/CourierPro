@@ -172,3 +172,38 @@ footer {
 .contact-form button.btn:hover {
   background: #004d40;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #0077b6;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0077b6;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+  }
+}
