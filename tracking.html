@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Package | Courier Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">Courier<span>Pro</span></div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tracking.html" class="active">Tracking</a></li>
+        
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <h2>Track Your Package</h2>
+    <p>Enter your tracking number or phone number below and hit Enter or click Track.</p>
+  </section>
+
+  <section class="page-section">
+  <div class="contact-container">
+    <form id="tracking-form" class="contact-form">
+      <label for="trackingInput">Tracking Number or Phone</label>
+      <input
+        type="text"
+        id="trackingInput"
+        placeholder="e.g., CP123456789"
+        required
+      />
+      <button type="submit" class="btn">Track</button>
+    </form>
+
+    <div id="result" class="contact-info" style="margin-top: 2em;"></div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      &copy; 2025 Courier Pro. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
+
+
