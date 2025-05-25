@@ -1,0 +1,48 @@
+{
+  "CP00001BFJ": {
+    "status": "In Transit",
+    "phone":"22432404",
+    "estimatedDelivery": "May 20, 2025 by 19:00",
+    "currentLocation": "Tevragh Zeina",
+    "history": [
+      "May 20, 2025 - Package received at CourierPro at 18h:00",
+      "May 20, 2025 - at 18:30 out for delviery ",
+      "May 20, 2025 - delivered at 19:00"
+    ],
+    "service": "CourierPro",
+    "deliveryAttempts": 0,
+    "recipient": "Fatimetou sidina",
+    "sender": "Beauty from Japan"
+  },
+
+  "2Z8888888888888888": {
+    "status": "Delivered",
+    "phone":"34342408",
+    "estimatedDelivery": "May 20, 2025 by 3 PM",
+    "currentLocation": "Delivered",
+    "history": [
+      "May 18, 2025 - Package shipped",
+      "May 20, 2025 - Delivered"
+    ],
+    "service": "UPS Express",
+    "deliveryAttempts": 1,
+    "recipient": "Alice Brown",
+    "sender": "Example Inc"
+  },
+
+  "3Z7777777777777777": {
+    "status": "Out for Delivery",
+    "estimatedDelivery": "May 25, 2025 by 7 PM",
+    "currentLocation": "Customer's local post office",
+    "history": [
+      "May 21, 2025 - Package shipped",
+      "May 23, 2025 - Arrived at local sorting facility",
+      "May 25, 2025 - Out for delivery"
+    ],
+    "service": "Standard Shipping",
+    "deliveryAttempts": 0,
+    "recipient": "Mohamed Ali",
+    "sender": "Global Traders"
+  }
+}
+
