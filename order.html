@@ -1,0 +1,78 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place an Order - CourierPro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">Courier<span>Pro</span></h1>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tracking.html">Tracking</a></li>
+        <li><a href="order.html">Place Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-section">
+  <div class="container contact-container">
+    <h2>Place an Order</h2>
+    <form class="contact-form" action="https://formspree.io/f/xanogdok" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="pickup">Pickup Address</label>
+      <input type="text" id="pickup" name="pickup" required />
+
+      <label for="delivery">Delivery Address</label>
+      <input type="text" id="delivery" name="delivery" required />
+
+      <label for="package">Package Details</label>
+      <textarea id="package" name="package" rows="4" required></textarea>
+
+      <label for="date">Preferred Delivery Date</label>
+      <input type="date" id="date" name="date" required />
+      
+      <input type="hidden" name="_next" value="thankyou.html">
+
+
+      <button type="submit" class="btn">Submit Order</button>
+
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 CourierPro. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
