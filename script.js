@@ -44,11 +44,7 @@ function displayInfo(info, container) {
   if (info.phone) {
     html += `<p><strong>Phone Number:</strong> ${info.phone}</p>`;
   }
-  html += "<p><strong>History:</strong></p><ul>";
-  info.history.forEach(event => {
-    html += `<li>${event}</li>`;
-  });
-  html += "</ul>";
+ 
 
   container.innerHTML = html;
 }
